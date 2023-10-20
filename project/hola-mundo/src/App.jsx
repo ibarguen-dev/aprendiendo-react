@@ -1,15 +1,45 @@
 import {TwitterFollowCard} from "./TwitterFollowCard"
 import "./App.css"
-import React from "react"
+
+const  users =[
+  {
+    userName: 'juantorres',
+    name: "Juan Esteban Torres Ibarguen",
+    img:"",
+    isFollowingDefualt:true
+  },
+  {
+    userName: 'juantorres',
+    name: "Juan Esteban Torres Ibarguen",
+    img:"",
+    isFollowingDefualt:false
+  }
+]
 
 function App() {
 
+  const fortmatUsername = (userName) => `@${userName}`
 
   return (
-    <React.Fragment>
-      <TwitterFollowCard userName="juantorres" name="Juan Esteban Torres Ibarguen" />
-      <TwitterFollowCard/>
-    </React.Fragment>
+    <section className="App">
+      {
+        users.map(user => {
+          const {userName, name, isFollowingDefualt,img} = user
+
+          return (
+            <TwitterFollowCard
+              userName={userName}
+              
+              isFollowingDefualt={isFollowingDefualt}
+              img={img}
+            >
+              {name}
+            </TwitterFollowCard>
+          )
+        })
+      }
+      
+    </section>
     
   )
 }
