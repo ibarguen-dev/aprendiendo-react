@@ -1,0 +1,50 @@
+.nd3-card{
+    background: white;
+    border-radius: 25px;
+    color: black;
+    width: 20rem;
+    overflow: hidden;
+    /* 
+     */
+}
+
+.nd3-card-imgJuego{
+    width: 100%;
+}
+
+
+.nd3-card-name{
+    text-align: center;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nd3-card-bottom{
+    border-radius: 5px;
+    width: 12rem;
+    height: 2.5rem;
+    border: none;
+    background: rgb(255, 153, 0);
+    color: white;
+    font-size: 16px;
+}
+
+.nd3-card-bottom:hover{
+    background: rgba(255, 153, 0, 0.829);
+}
+
+.nd3-card-imgQr{
+    display: none;
+    width: 100%;
+}
+
+ .nd3-card-imgJuego.download{
+    display:none;
+}
+
+.nd3-card-imgQr.download{
+    display:block;
+}
