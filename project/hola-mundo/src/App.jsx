@@ -18,7 +18,7 @@ const  users =[
 
 function App() {
 
-  const fortmatUsername = (userName) => `@${userName}`
+
 
   return (
     <section className="App">
