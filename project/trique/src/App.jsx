@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import confetti  from 'canvas-confetti'
 import Square from './components/Square'
-import { TURNS, WiNNER_COMBOS } from './js/constants'
+import { TURNS } from './js/constants'
 import { checkWinner, checkEndGame } from './logic/board'
 import WinnerModel from './components/WinnerModel'
+import { saveGameToStorage, resetGameToStorage } from './logic/storage'
 import './App.css'
-
-
 
 
 
@@ -31,9 +30,9 @@ function App() {
     setBoard(Array(9).fill(null))
     setTurn(TURNS.X)
     setWinner(null)
+
+    resetGameToStorage()
   }
-
-
 
   const updateBoard = (index) =>{
     if(board[index] || winner) return
@@ -48,9 +47,12 @@ function App() {
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
 
     setTurn(newTurn)
+    saveGameToStorage({
+      bord:newBord,
+      turn:turn
+    })
 
-    window.localStorage.setItem('board',JSON.stringify(newBord))
-    windows.localStorage.setBoard('turn', turn)
+    
     const newWinner = checkWinner(newBord)
 
     if(newWinner){
@@ -68,7 +70,7 @@ function App() {
     <>
     <main className='board'>
       <h1>Trickey</h1>
-      <button onClick={resetGame}>reser del juego</button>
+      <button onClick={resetGame}>reset del juego</button>
       <section className="game">
         {
           board.map((_,index)=>{
