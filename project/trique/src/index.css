@@ -46,11 +46,12 @@ body {
   background: transparent;
   border: 2px solid #eee;
   color: #eee;
-  width: 100px;
+  width: 80%;
   border-radius: 5px;
   transition: 0.2s;
   font-weight: bold;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .board button:hover {
@@ -87,7 +88,7 @@ body {
 }
 
 .winner {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
