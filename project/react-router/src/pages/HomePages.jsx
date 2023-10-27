@@ -1,4 +1,4 @@
-import {navigate} from '../Links.jsx'
+import {Link} from '../Links.jsx'
 
 const HomePage = () =>{
 
@@ -6,7 +6,7 @@ const HomePage = () =>{
       <>
       <h1>Home</h1>
       <p>Esta es una pagina de ejemplo para crear un React Router desde cero</p>
-      <button onClick={() => navigate('/about')}>Ir sobre nosotros </button>
+      <Link to='/about'>Ir sobre nosotros </Link>
       </>
     )
   }

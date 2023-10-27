@@ -1,4 +1,4 @@
-import {navigate} from '../Links.jsx'
+import {Link} from '../Links.jsx'
 
 const AboutPage   = () =>{
 
@@ -6,7 +6,7 @@ const AboutPage   = () =>{
       <>
         <h1>About</h1>
         <p>Esto es una pagina de about</p>
-        <button onClick={() => navigate('/')} >Ir al inicio</button>
+        <Link to='/'>Ir al inicio</Link>
       </>
     )
   
