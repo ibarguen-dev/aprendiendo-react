@@ -16,7 +16,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest",
-    "prepare": "swc ./src/ *.jsx -d lib && cd lib && rd /s /q pages utils && del App.js main.js Router.test.js",
+    "prepare": "swc ./src/ *.jsx -d lib && rd /s /q .\\lib\\pages  && del .\\lib\\App.js .\\lib\\main.js .\\lib\\Router.test.js && copy .\\src\\constants.js lib && copy .\\src\\getCurrentPath.js lib\\",
     "preview": "vite preview"
   },
   "dependencies": {
