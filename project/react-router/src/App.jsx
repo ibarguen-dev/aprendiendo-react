@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react'
-import Router from './components/Router'
+import Router from './Router'
 import Pages404 from './pages/404'
 import './App.css'
 import Route from './Route'
