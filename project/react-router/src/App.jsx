@@ -1,8 +1,8 @@
 import { Suspense, lazy } from 'react'
-import Router from './Router'
-import Pages404 from './pages/404'
+import {Router} from './Router.jsx'
+import Pages404 from './pages/404.jsx'
+import {Route} from './Route.jsx'
 import './App.css'
-import Route from './Route'
 
 
 

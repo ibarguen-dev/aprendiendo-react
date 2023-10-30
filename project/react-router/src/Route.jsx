@@ -1,6 +1,8 @@
-const Route = ({path,Component}) => {
+export function Route ({path,Component}) {
 
     return null
 }
 
-export default Route
+   
+
+

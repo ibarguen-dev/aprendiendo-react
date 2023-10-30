@@ -1,4 +1,4 @@
-import { Link } from "../Links"
+import { Link } from "../Link.jsx"
 
 
 

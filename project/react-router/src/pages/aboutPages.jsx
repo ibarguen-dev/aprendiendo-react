@@ -1,4 +1,4 @@
-import {Link} from '../Links.jsx'
+import {Link} from '../Link.jsx'
 
 const AboutPage   = () =>{
 
