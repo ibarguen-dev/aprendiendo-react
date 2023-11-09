@@ -1,1 +1,1 @@
-export{Router}from"./Router.jsx";export{Link}from"./Link.jsx";export{Route}from"./Route.jsx";
+export{Router}from"./Router.js";export{Link}from"./Link.js";export{Route}from"./Route.js";

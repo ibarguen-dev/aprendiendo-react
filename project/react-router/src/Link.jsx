@@ -1,4 +1,4 @@
-import { EVENTS,BUTTONS } from './utils/constants.js'
+import { EVENTS,BUTTONS } from './constants.js'
 
 
 
