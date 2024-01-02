@@ -130,3 +130,36 @@ body {
   cursor: pointer;
   font-size: 48px;
 }
+
+@media (max-width:375px) {
+  
+  .board {
+    margin: 100px auto;
+  }
+  
+  .board h1 {
+    color: #eee;
+    margin-bottom: 16px;
+  }
+  
+  .board button {
+    width: 80%;
+  }
+  
+}
+
+@media (max-width:360px) {
+  .board {
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .board {
+    margin: 20px auto;
+  }
+  .square {
+    width: 80px;
+    height: 80px;
+  }
+}
